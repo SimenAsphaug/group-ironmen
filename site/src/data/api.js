@@ -194,11 +194,6 @@ class Api {
     }
   }
 
-  async getCaptchaEnabled() {
-    const response = await fetch(this.captchaEnabledUrl);
-    return response.json();
-  }
-
   async getCollectionLogInfo() {
     const response = await fetch(this.collectionLogInfoUrl);
     return response.json();
